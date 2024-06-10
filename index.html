@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K-Map Solver</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+  <div class="container animated fadeIn">
+    <h1 class="animated bounceInDown">K-Map Solver</h1>
+    <div id="inputs" class="animated fadeInLeft">
+      <label for="variables">Number of Variables:</label>
+      <select id="variables" class="custom-select">
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <div id="truth-table" class="animated fadeInUp"></div>
+    </div>
+    <div id="kmap-container" class="animated zoomIn"></div>
+    <button id="solve" class="btn animated rubberBand">Solve</button>
+    <p id="solution" class="animated pulse"></p>
+  </div>
+  <div class="about animated fadeInUp">
+    <h2 class="animated bounce">About K-Maps</h2>
+    <p>K-maps, also known as Karnaugh maps, are graphical tools used to simplify Boolean expressions. They visually represent the relationship between minterms and make it easier to identify product terms.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html
